@@ -17,5 +17,6 @@ A terminal-based Python app that displays live weather and news headlines for an
 - This is my first ever real project, so don't be too harsh!
 - But give feedback on the code!
 - Thank you for using this code!
+  
 ## Issues
 - Hard to run on old mac, overall python is just hard to setup
