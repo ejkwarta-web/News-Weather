@@ -12,3 +12,8 @@ A terminal-based Python app that displays live weather and news headlines for an
 - Live weather data (no API key needed)
 - Live news headlines filtered by topic and count
 - Debug mode for troubleshooting
+
+## Notice
+- This is my first ever real project, so don't be to harsh!
+- But give feeback on the code!
+- Thank you for using this code!
