@@ -1,1 +1,14 @@
-# News-Weather
+# News Weather
+
+A terminal-based Python app that displays live weather and news headlines for any city.
+
+## Setup
+1. Install dependencies: `pip install requests python-dotenv`
+2. Get a free API key from newsapi.org
+3. Copy `.env.example` to `.env` and add your key
+4. Run `python main.py`
+
+## Features
+- Live weather data (no API key needed)
+- Live news headlines filtered by topic and count
+- Debug mode for troubleshooting
