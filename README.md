@@ -14,6 +14,6 @@ A terminal-based Python app that displays live weather and news headlines for an
 - Debug mode for troubleshooting
 
 ## Notice
-- This is my first ever real project, so don't be to harsh!
-- But give feeback on the code!
+- This is my first ever real project, so don't be too harsh!
+- But give feedback on the code!
 - Thank you for using this code!
