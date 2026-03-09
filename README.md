@@ -20,3 +20,9 @@ A terminal-based Python app that displays live weather and news headlines for an
   
 ## Issues
 - Hard to run on old mac, overall python is just hard to setup
+
+# Changelog
+
+## Version 1.01
+- Fixed error handling
+- Added changelog
