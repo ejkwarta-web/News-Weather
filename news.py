@@ -31,7 +31,11 @@ def news_getter(topic, headline_amount):
         return
     else:
         article = data_news['articles']
-        articles_to_show = article if headline_amount is None else article[:headline_amount]
-        # This enumerate function adds numbers to the begining of the news. It also prints only a certain amount of headline the user wants
-        for index, item in enumerate(articles_to_show, 1):
-            print(f"{index}. {item['title']}")
+        if not article:
+            print("No headlines found for that topic")
+            return
+        else:
+            articles_to_show = article if headline_amount is None else article[:headline_amount]
+            # This enumerate function adds numbers to the begining of the news. It also prints only a certain amount of headline the user wants
+            for index, item in enumerate(articles_to_show, 1):
+                print(f"{index}. {item['title']}")

@@ -11,32 +11,41 @@ NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
 def main():
     while True:
-        city = input("What city are you in? >>>")
+        city = input("What city are you in? Or do exit to exit >>>")
         if city == "debug":
             debug_mode()
             continue
+        if city == "exit":
+            break
         topic = input(
             "What topic of news would you like? Or do nothing for all >>>")
-        # This input is used for seeing how many headlines the user wants
-        headline_input = input(
-            "Enter the amount of headlines you want, or nothing for all >>>")
-        if headline_input == "":
-            headline_amount = None
-        else:
-            headline_amount = int(headline_input)
-        result = get_coordinates(city)
-        if result is None:
+        if topic.isdigit():
+            print("Put a topic here")
             continue
-        # This prints all the data
         else:
-            latitude, longitude, city = result
-            temp, sky_to_print = get_weather(latitude, longitude)
-            print("---Weather---")
-            print(f"The temperature in {city} is {temp}°F.")
-            print(f"The weather type is {sky_to_print.lower()}.")
-            print("---News---")
-            news_getter(topic, headline_amount)
-
+            # This input is used for seeing how many headlines the user wants
+            headline_input = input(
+                "Enter the amount of headlines you want, or nothing for all >>>")
+            if headline_input == "":
+                headline_amount = None
+            else:
+                if headline_input.isdigit():
+                    headline_amount = int(headline_input)
+                else:
+                    print("Put a number please")
+                    continue
+            result = get_coordinates(city)
+            if result is None:
+                continue
+            # This prints all the data
+            else:
+                latitude, longitude, city = result
+                temp, sky_to_print = get_weather(latitude, longitude)
+                print("---Weather---")
+                print(f"The temperature in {city} is {temp}°F.")
+                print(f"The weather type is {sky_to_print.lower()}.")
+                print("---News---")
+                news_getter(topic, headline_amount)
 # This is a debug mode for testing, you can access it by doing debug in the "what city are you in" querry
 
 
