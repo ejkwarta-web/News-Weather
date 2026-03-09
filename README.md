@@ -23,6 +23,6 @@ A terminal-based Python app that displays live weather and news headlines for an
 
 # Changelog
 
-## Version Alpha 1.01
+## Alpha 1.01
 - Fixed error handling
 - Added changelog
