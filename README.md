@@ -26,3 +26,6 @@ A terminal-based Python app that displays live weather and news headlines for an
 ## Alpha 1.01
 - Fixed error handling
 - Added changelog
+
+## Alpha 1.02
+- Added Celsius as a temp option
